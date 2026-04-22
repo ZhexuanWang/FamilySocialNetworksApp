@@ -199,12 +199,18 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 - [x] 编写 Jest 单元测试（6 个 service，33 个测试全部通过）
 
 #### Phase 4: 前端基础
-- [ ] React Router 路由配置
-- [ ] 用户认证页面（登录/注册）
-- [ ] 家族创建与浏览页面
-- [ ] 个人中心页面框架
+- [x] React Router 路由配置（ProtectedRoute / PublicRoute）
+- [x] TypeScript 类型定义（entities 全覆盖）
+- [x] API 服务层（axios + interceptors，自动挂载 JWT）
+- [x] Zustand 认证状态管理（持久化到 localStorage）
+- [x] 登录/注册页面（含表单验证）
+- [x] 家族列表/创建/详情页面
+- [x] 成员添加/详情页面
+- [x] 个人中心页面
+- [x] Vitest 测试配置 + 1 个占位测试
+- [x] 前端构建验证通过（tsc + vite build，119 modules）
 
-#### Phase 5: 族谱可视化
+#### Phase 5: 族谱可视化（当前）
 - [ ] 族谱树组件（基于 D3.js / react-force-graph）
 - [ ] 成员节点交互（点击查看详情）
 - [ ] 家族成员关系图展示
