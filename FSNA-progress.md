@@ -174,7 +174,7 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 ## 版本记录
 
 ### v0.01 — 项目初始化与基础设施
-**状态**：进行中
+**状态**：✅ 完成（已推送 GitHub）
 
 #### Phase 1: 项目初始化
 - [x] 创建 FSNA-progress.md（本文档）
@@ -192,11 +192,44 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 - [x] 实现 Members 模块（家族成员 CRUD）
 - [x] 编写 Jest 单元测试（3 个 service，19 个测试全部通过）
 
-#### Phase 3: 核心功能（当前）
+#### Phase 3: 核心功能
 - [x] 实现 Relationships 模块（关系管理，含自关联校验）
 - [x] 实现 Achievements 模块（成就 CRUD，按时间降序）
 - [x] 实现 SelfIntroductions 模块（自我介绍 upsert 语义）
 - [x] 编写 Jest 单元测试（6 个 service，33 个测试全部通过）
+
+#### Phase 4: 前端基础
+- [x] React Router 路由配置（ProtectedRoute / PublicRoute）
+- [x] TypeScript 类型定义（entities 全覆盖）
+- [x] API 服务层（axios + interceptors，自动挂载 JWT）
+- [x] Zustand 认证状态管理（持久化到 localStorage）
+- [x] 登录/注册页面（含表单验证）
+- [x] 家族列表/创建/详情页面
+- [x] 成员添加/详情页面
+- [x] 个人中心页面
+- [x] Vitest 测试配置 + 1 个占位测试
+- [x] 前端构建验证通过（tsc + vite build，119 modules）
+
+#### Phase 5: 族谱可视化
+- [x] 族谱树组件（基于 react-force-graph-2d，Canvas 渲染）
+- [x] 成员节点颜色区分性别（男蓝/女粉/其他灰）
+- [x] 节点悬停高亮、点击跳转成员详情
+- [x] 关系连线标注类型（父母/子女/配偶等）
+- [x] 响应式尺寸、缩放自适应、拖拽调整布局
+- [x] 图例面板（性别+关系类型）
+- [x] RelationshipManager 组件（族谱页内直接添加/删除关系）
+- [x] FamilyDetailPage 改为 Tab 布局（族谱图/成员列表/关系管理）
+- [x] 前端构建验证通过（tsc + vite build，1151 modules，428KB bundle）
+
+#### Phase 6: 完善与测试
+- [x] CLAUDE.md 项目文档（/init 自动生成）
+- [x] E2E 测试（auth.e2e-spec.ts + families.e2e-spec.ts，使用 supertest）
+- [x] Docker Compose 生产配置（docker-compose.prod.yml）
+- [x] README.md 完整化（功能特性/技术栈/API 端点/部署说明）
+- [x] 所有单元测试通过（33 个）
+- [x] TypeScript 类型检查通过（前后端）
+- [x] 前端构建验证通过（1151 modules，428KB）
+- [x] v0.01 标签创建并推送至 GitHub
 
 #### Phase 4: 前端基础
 - [x] React Router 路由配置（ProtectedRoute / PublicRoute）
@@ -222,11 +255,14 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 - [x] 前端构建验证通过（tsc + vite build，1151 modules，428KB bundle）
 
 #### Phase 6: 完善与测试
-- [ ] 前后端联调
-- [ ] Jest + React Testing Library 测试
-- [ ] 完善 README.md
-- [ ] Docker 部署配置
-- [ ] 提交 v0.01 最终版本至 GitHub
+- [x] CLAUDE.md 项目文档（/init 自动生成）
+- [x] E2E 测试（auth.e2e-spec.ts + families.e2e-spec.ts，使用 supertest）
+- [x] Docker Compose 生产配置（docker-compose.prod.yml）
+- [x] README.md 完整化（功能特性/技术栈/API 端点/部署说明）
+- [x] 所有单元测试通过（33 个）
+- [x] TypeScript 类型检查通过（前后端）
+- [x] 前端构建验证通过（1151 modules，428KB）
+- [x] v0.01 标签创建并推送至 GitHub
 
 ---
 
