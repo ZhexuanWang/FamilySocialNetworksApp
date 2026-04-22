@@ -176,20 +176,27 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 ### v0.01 — 项目初始化与基础设施
 **状态**：进行中
 
-#### Phase 1: 项目初始化（当前）
+#### Phase 1: 项目初始化
 - [x] 创建 FSNA-progress.md（本文档）
-- [ ] 初始化 Git 仓库
-- [ ] 搭建 Monorepo 目录结构
-- [ ] 配置 Docker + Docker Compose（PostgreSQL + Redis）
-- [ ] 初始化 Nest.js 后端项目
-- [ ] 初始化 React 前端项目
-- [ ] 配置 GitHub 仓库并推送初始版本
+- [x] 初始化 Git 仓库
+- [x] 搭建 Monorepo 目录结构
+- [x] 配置 Docker + Docker Compose（PostgreSQL + Redis）
+- [x] 初始化 Nest.js 后端项目
+- [x] 初始化 React 前端项目
+- [x] 配置 GitHub 仓库并推送初始版本
 
 #### Phase 2: 数据库与后端基础
-- [ ] 实现 TypeORM 实体定义（全部表）
-- [ ] 实现 Users 模块（注册/登录/JWT 认证）
-- [ ] 实现 Families 模块（创建/查询家族）
-- [ ] 编写 Jest 单元测试
+- [x] 实现 TypeORM 实体定义（users/families/family_members/relationships/achievements/self_introductions）
+- [x] 实现 Auth 模块（注册/登录/JWT 认证）
+- [x] 实现 Families 模块（创建/查询/更新/删除家族）
+- [x] 实现 Members 模块（家族成员 CRUD）
+- [x] 编写 Jest 单元测试（3 个 service，19 个测试全部通过）
+
+#### Phase 3: 核心功能（当前）
+- [ ] 实现 Relationships 模块（关系管理）
+- [ ] 实现 Achievements 模块（成就 CRUD）
+- [ ] 实现 SelfIntroductions 模块（自我介绍 CRUD）
+- [ ] 编写集成测试
 
 #### Phase 3: 核心功能
 - [ ] 实现 FamilyMembers 模块（CRUD + 族谱节点）

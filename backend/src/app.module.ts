@@ -3,6 +3,17 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AuthModule } from './modules/auth/auth.module';
+import { FamiliesModule } from './modules/families/families.module';
+import { MembersModule } from './modules/members/members.module';
+import {
+  User,
+  Family,
+  FamilyMember,
+  Relationship,
+  Achievement,
+  SelfIntroduction,
+} from './entities';
 
 @Module({
   imports: [
@@ -17,9 +28,12 @@ import { AppService } from './app.service';
       username: process.env.DB_USER || 'fsna_user',
       password: process.env.DB_PASSWORD || 'fsna_password',
       database: process.env.DB_NAME || 'fsna_db',
-      autoLoadEntities: true,
-      synchronize: true, // 仅开发环境使用，生产环境使用 migrations
+      entities: [User, Family, FamilyMember, Relationship, Achievement, SelfIntroduction],
+      synchronize: true,
     }),
+    AuthModule,
+    FamiliesModule,
+    MembersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
