@@ -211,9 +211,15 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 - [x] 前端构建验证通过（tsc + vite build，119 modules）
 
 #### Phase 5: 族谱可视化（当前）
-- [ ] 族谱树组件（基于 D3.js / react-force-graph）
-- [ ] 成员节点交互（点击查看详情）
-- [ ] 家族成员关系图展示
+- [x] 族谱树组件（基于 react-force-graph-2d，Canvas 渲染）
+- [x] 成员节点颜色区分性别（男蓝/女粉/其他灰）
+- [x] 节点悬停高亮、点击跳转成员详情
+- [x] 关系连线标注类型（父母/子女/配偶等）
+- [x] 响应式尺寸、缩放自适应、拖拽调整布局
+- [x] 图例面板（性别+关系类型）
+- [x] RelationshipManager 组件（族谱页内直接添加/删除关系）
+- [x] FamilyDetailPage 改为 Tab 布局（族谱图/成员列表/关系管理）
+- [x] 前端构建验证通过（tsc + vite build，1151 modules，428KB bundle）
 
 #### Phase 6: 完善与测试
 - [ ] 前后端联调
