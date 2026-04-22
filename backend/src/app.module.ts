@@ -6,6 +6,9 @@ import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { FamiliesModule } from './modules/families/families.module';
 import { MembersModule } from './modules/members/members.module';
+import { RelationshipsModule } from './modules/relationships/relationships.module';
+import { AchievementsModule } from './modules/achievements/achievements.module';
+import { IntroductionsModule } from './modules/introductions/introductions.module';
 import {
   User,
   Family,
@@ -34,6 +37,9 @@ import {
     AuthModule,
     FamiliesModule,
     MembersModule,
+    RelationshipsModule,
+    AchievementsModule,
+    IntroductionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -193,17 +193,10 @@ User ──1:1── FamilyMember ──N:N── Relationship ──N:1── F
 - [x] 编写 Jest 单元测试（3 个 service，19 个测试全部通过）
 
 #### Phase 3: 核心功能（当前）
-- [ ] 实现 Relationships 模块（关系管理）
-- [ ] 实现 Achievements 模块（成就 CRUD）
-- [ ] 实现 SelfIntroductions 模块（自我介绍 CRUD）
-- [ ] 编写集成测试
-
-#### Phase 3: 核心功能
-- [ ] 实现 FamilyMembers 模块（CRUD + 族谱节点）
-- [ ] 实现 Relationships 模块（关系管理）
-- [ ] 实现 Achievements 模块
-- [ ] 实现 SelfIntroductions 模块
-- [ ] 编写集成测试
+- [x] 实现 Relationships 模块（关系管理，含自关联校验）
+- [x] 实现 Achievements 模块（成就 CRUD，按时间降序）
+- [x] 实现 SelfIntroductions 模块（自我介绍 upsert 语义）
+- [x] 编写 Jest 单元测试（6 个 service，33 个测试全部通过）
 
 #### Phase 4: 前端基础
 - [ ] React Router 路由配置
